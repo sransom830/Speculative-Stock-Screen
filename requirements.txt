@@ -1,0 +1,8 @@
+# Runtime
+python-dotenv>=1.0.0
+alpaca-py>=0.21.0
+pandas>=2.0.0
+supabase>=2.4.0
+
+# Development
+pytest>=8.0.0
