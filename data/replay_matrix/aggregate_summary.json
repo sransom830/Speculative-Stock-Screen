@@ -1,0 +1,124 @@
+{
+  "bundle_count": 8,
+  "catalog_archetype_id_frequency": {
+    "leverage_reflexivity": 4,
+    "narrative_ignition": 6,
+    "retail_mania": 4,
+    "thematic_saturation": 6,
+    "volatility_cluster": 6
+  },
+  "combined_saturation_index_buckets": {
+    "[0.25,0.50)": 8
+  },
+  "convergence_numeric_summary": {
+    "narrative_concentration_minus_volatility": {
+      "max": -0.029818457680697547,
+      "mean": -0.13051831975140638,
+      "min": -0.29166037646213083,
+      "n": 8
+    },
+    "reddit_composite_minus_participation": {
+      "max": -0.16833241752794464,
+      "mean": -0.34326574245400254,
+      "min": -0.6245685246389964,
+      "n": 8
+    },
+    "reddit_velocity_minus_acceleration": {
+      "max": -0.045329693194817916,
+      "mean": -0.4120620866753953,
+      "min": -0.551219512195122,
+      "n": 8
+    },
+    "reddit_velocity_minus_participation": {
+      "max": -0.32846560647600553,
+      "mean": -0.4883640994747823,
+      "min": -0.751219512195122,
+      "n": 8
+    },
+    "subreddit_breadth_minus_participation": {
+      "max": 0.168691243150153,
+      "mean": -0.04844684530538988,
+      "min": -0.361505295865188,
+      "n": 8
+    },
+    "thematic_clustering_minus_acceleration": {
+      "max": 0.26895602109089645,
+      "mean": -0.2076448983799354,
+      "min": -0.4473214285714285,
+      "n": 8
+    },
+    "thematic_clustering_minus_volatility": {
+      "max": 0.3511300529947349,
+      "mean": 0.24889267784820543,
+      "min": 0.024948620077661632,
+      "n": 8
+    },
+    "thematic_overlay_minus_acceleration": {
+      "max": 0.1647773639658959,
+      "mean": -0.25278050519067025,
+      "min": -0.4544515929817072,
+      "n": 8
+    }
+  },
+  "cross_regime": {
+    "catalog_archetype_pairs_within_study": {
+      "leverage_reflexivity||narrative_ignition": 2,
+      "leverage_reflexivity||retail_mania": 2,
+      "leverage_reflexivity||thematic_saturation": 2,
+      "leverage_reflexivity||volatility_cluster": 2,
+      "narrative_ignition||retail_mania": 2,
+      "narrative_ignition||thematic_saturation": 4,
+      "narrative_ignition||volatility_cluster": 6,
+      "retail_mania||thematic_saturation": 4,
+      "retail_mania||volatility_cluster": 2,
+      "thematic_saturation||volatility_cluster": 4
+    },
+    "emission_tag_pairs_within_symbol_row": {},
+    "replay_date_symbol_emission_variants": {
+      "2021-01-27|AMC": {
+        "distinct_emission_tag_sets": 1,
+        "run_rows_observed": 2,
+        "variants": [
+          [
+            "participation_dominant_reflexivity"
+          ]
+        ]
+      },
+      "2021-01-27|GME": {
+        "distinct_emission_tag_sets": 1,
+        "run_rows_observed": 2,
+        "variants": [
+          []
+        ]
+      },
+      "2021-05-19|MSTR": {
+        "distinct_emission_tag_sets": 1,
+        "run_rows_observed": 2,
+        "variants": [
+          []
+        ]
+      },
+      "2024-05-23|NVDA": {
+        "distinct_emission_tag_sets": 1,
+        "run_rows_observed": 2,
+        "variants": [
+          [
+            "thematic_concentration_dominance"
+          ]
+        ]
+      }
+    }
+  },
+  "external_participation_alignment_buckets": {
+    "[0.25,0.50)": 2,
+    "[0.50,0.75)": 2,
+    "[0.75,1.00)": 4
+  },
+  "generated_at_utc": "2026-05-14T03:46:54.481033+00:00",
+  "replay_emission_tag_frequency_across_symbol_rows": {
+    "participation_dominant_reflexivity": 2,
+    "thematic_concentration_dominance": 2
+  },
+  "run_count": 8,
+  "schema_version": 1
+}

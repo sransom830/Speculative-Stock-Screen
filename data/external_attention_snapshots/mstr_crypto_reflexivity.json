@@ -1,0 +1,37 @@
+{
+  "schema_version": 2,
+  "replay_date": "2021-05-19",
+  "lookback_calendar_days": 90,
+  "provider_slug": "historical_curated_research_v1",
+  "notes": "Illustrative MSTR BTC-linked reflexivity snapshot — observational only.",
+  "symbols": [
+    {
+      "symbol": "MSTR",
+      "reddit_mentions": 2600,
+      "reddit_mentions_prior": 1400,
+      "reddit_comment_count": 155000,
+      "reddit_comment_count_prior": 82000,
+      "subreddit_count": 10,
+      "subreddit_list": [
+        "Bitcoin",
+        "btc",
+        "CryptoCurrency",
+        "CryptoMarkets",
+        "investing",
+        "MSTR",
+        "stocks",
+        "StockMarket",
+        "wallstreetbets",
+        "SecurityAnalysis"
+      ],
+      "news_headline_count": 290,
+      "news_headline_count_prior": 150,
+      "thematic_topic_masses": [
+        { "topic": "bitcoin_treasury_strategy", "mass": 125 },
+        { "topic": "crypto_equity_beta", "mass": 95 },
+        { "topic": "liquidity_volatility_cluster", "mass": 85 },
+        { "topic": "software_operations_sidebar", "mass": 45 }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "alpaca_feed": "iex",
+  "catalog_archetype_ids": [
+    "leverage_reflexivity",
+    "retail_mania",
+    "thematic_saturation"
+  ],
+  "external_provider_slug": "historical_curated_research_v1",
+  "external_snapshot_path": "data/external_attention_snapshots/amc_january_2021.json",
+  "lookback_calendar_days": 90,
+  "per_symbol": {
+    "AMC": {
+      "layer2_attention": {
+        "ecosystem_multiplier": 1.22,
+        "factor_acceleration_composite": 0.8,
+        "factor_participation_composite": 1.0,
+        "factor_realized_vol_expansion": 0.3279925563929267,
+        "factor_volatility_composite": 0.3279925563929267,
+        "speculative_attention_score": 93.85192388878366,
+        "speculative_attention_state": "RETAIL_FRENZY"
+      },
+      "saturation": {
+        "acceleration": 0.8,
+        "combined_saturation_index": 0.4821162313592191,
+        "convergence": {
+          "narrative_concentration_minus_volatility": -0.29166037646213083,
+          "reddit_composite_minus_participation": -0.6245685246389964,
+          "reddit_velocity_minus_acceleration": -0.551219512195122,
+          "reddit_velocity_minus_participation": -0.751219512195122,
+          "subreddit_breadth_minus_participation": -0.361505295865188,
+          "thematic_clustering_minus_acceleration": -0.44705882352941173,
+          "thematic_clustering_minus_volatility": 0.024948620077661632,
+          "thematic_overlay_minus_acceleration": -0.4544515929817072
+        },
+        "external_narrative_blend": 0.2549016105874626,
+        "headline_density": 0.013117283950617285,
+        "layer2_scored": true,
+        "market_native_blend": 0.7093308521309756,
+        "mention_velocity": 0.24878048780487805,
+        "narrative_concentration": 0.03633217993079585,
+        "news_attention": 0.17977451637601582,
+        "participation": 1.0,
+        "reddit_attention": 0.37543147536100363,
+        "saturation": {
+          "acceleration_without_participation_excess": 0.0,
+          "attention_share_concentration_thematic_mass": 0.03633217993079585,
+          "crowd_fixation_intensity": 0.3008608321377332,
+          "external_participation_alignment": 0.37543147536100363,
+          "narrative_concentration_dominance": 0.03633217993079585,
+          "participation_without_narrative_amplification_excess": 0.7450983894125374
+        },
+        "subreddit_breadth": 0.638494704134812,
+        "symbol": "AMC",
+        "thematic_clustering": 0.3529411764705883,
+        "thematic_mass_concentration_raw": 0.03633217993079585,
+        "thematic_overlay": 0.34554840701829287,
+        "volatility_expansion": 0.3279925563929267
+      }
+    }
+  },
+  "preset_key": "amc-jan-2021",
+  "provenance": [
+    "catalog:amc-jan-2021"
+  ],
+  "replay_date": "2021-01-27",
+  "replay_emission_tags": {
+    "AMC": [
+      "participation_dominant_reflexivity"
+    ]
+  },
+  "replay_id": "rm_b445f37909147e21fbdf6cf47449",
+  "schema_version": 1,
+  "symbols_analyzed": [
+    "AMC"
+  ],
+  "truth_expectation": null
+}

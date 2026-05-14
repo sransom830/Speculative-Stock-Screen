@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "replay_date": "2021-01-27",
+  "lookback_calendar_days": 90,
+  "provider_slug": "historical_curated_research_v1",
+  "notes": "Illustrative curated counts for speculative-event research — not empirical ground truth. No live APIs.",
+  "symbols": [
+    {
+      "symbol": "GME",
+      "reddit_mentions": 14500,
+      "reddit_mentions_prior": 6200,
+      "reddit_comment_count": 980000,
+      "reddit_comment_count_prior": 410000,
+      "subreddit_count": 14,
+      "subreddit_list": [
+        "GME",
+        "investing",
+        "options",
+        "shortsqueeze",
+        "stocks",
+        "stockmarket",
+        "wallstreetbets",
+        "wallstreetbetsnew",
+        "weedstocks",
+        "smallstreetbets",
+        "Superstonk",
+        "DDintoGME",
+        "SecurityAnalysis",
+        "SPACs"
+      ],
+      "news_headline_count": 560,
+      "news_headline_count_prior": 210,
+      "thematic_topic_masses": [
+        { "topic": "short_squeeze_mechanics", "mass": 180 },
+        { "topic": "retail_flow_attention", "mass": 140 },
+        { "topic": "broker_platform_constraints", "mass": 95 },
+        { "topic": "market_microstructure", "mass": 75 },
+        { "topic": "macro_rates_sidebar", "mass": 70 }
+      ]
+    }
+  ]
+}

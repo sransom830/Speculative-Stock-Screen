@@ -4,6 +4,8 @@ Layer 2 — What is attracting speculative crowd attention?
 Market-native attention scoring only (no fragility, confirmation, execution).
 """
 
+from .replay_runner import Layer2ReplayArtifacts, clip_bars_no_future_leak, fetch_window_utc, refs_from_layer1, run_layer2_replay
+
 from .fetch_population import fetch_layer2_speculative_population_df
 from .models import (
     NARRATIVE_COHORT_KEYS,
@@ -19,6 +21,9 @@ from .persistence import (
 from .speculative_attention_score import compute_speculative_attention
 
 __all__ = [
+    "Layer2ReplayArtifacts",
+    "clip_bars_no_future_leak",
+    "fetch_window_utc",
     "NARRATIVE_COHORT_KEYS",
     "SPECULATIVE_BATTLEFIELD_COHORT_KEYS",
     "SpeculativeAttentionConfig",
@@ -27,5 +32,7 @@ __all__ = [
     "compute_speculative_attention",
     "fetch_layer2_speculative_population_df",
     "population_rows_from_attention_df",
+    "refs_from_layer1",
+    "run_layer2_replay",
     "upsert_current_population",
 ]

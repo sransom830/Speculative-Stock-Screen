@@ -1,0 +1,39 @@
+{
+  "schema_version": 2,
+  "replay_date": "2024-05-23",
+  "lookback_calendar_days": 90,
+  "provider_slug": "historical_curated_research_v1",
+  "notes": "Illustrative NVDA AI-infrastructure narrative concentration snapshot — observational only.",
+  "symbols": [
+    {
+      "symbol": "NVDA",
+      "reddit_mentions": 3800,
+      "reddit_mentions_prior": 2100,
+      "reddit_comment_count": 210000,
+      "reddit_comment_count_prior": 120000,
+      "subreddit_count": 12,
+      "subreddit_list": [
+        "NVDA",
+        "AMD_Stock",
+        "AINVDIA",
+        "artificial",
+        "investing",
+        "semiconductors",
+        "stocks",
+        "StockMarket",
+        "technology",
+        "wallstreetbets",
+        "options",
+        "SecurityAnalysis"
+      ],
+      "news_headline_count": 420,
+      "news_headline_count_prior": 260,
+      "thematic_topic_masses": [
+        { "topic": "ai_datacenter_capex", "mass": 160 },
+        { "topic": "gpu_supply_chain", "mass": 110 },
+        { "topic": "hyperscaler_demand", "mass": 95 },
+        { "topic": "semicap_equipment", "mass": 55 }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "alpaca_feed": "iex",
+  "catalog_archetype_ids": [
+    "narrative_ignition",
+    "thematic_saturation",
+    "volatility_cluster"
+  ],
+  "external_provider_slug": "historical_curated_research_v1",
+  "external_snapshot_path": "data/external_attention_snapshots/nvda_ai_narrative.json",
+  "lookback_calendar_days": 90,
+  "per_symbol": {
+    "NVDA": {
+      "layer2_attention": {
+        "ecosystem_multiplier": 1.1400000000000001,
+        "factor_acceleration_composite": 0.6813458387002742,
+        "factor_participation_composite": 0.4903703683807675,
+        "factor_realized_vol_expansion": 0.14436244192404735,
+        "factor_volatility_composite": 0.14436244192404735,
+        "speculative_attention_score": 49.45158446240499,
+        "speculative_attention_state": "NARRATIVE_ACCELERATION"
+      },
+      "saturation": {
+        "acceleration": 0.6813458387002742,
+        "combined_saturation_index": 0.359502174554298,
+        "convergence": {
+          "narrative_concentration_minus_volatility": -0.10165647064664751,
+          "reddit_composite_minus_participation": -0.16833241752794464,
+          "reddit_velocity_minus_acceleration": -0.5194410767955123,
+          "reddit_velocity_minus_participation": -0.32846560647600553,
+          "subreddit_breadth_minus_participation": 0.168691243150153,
+          "thematic_clustering_minus_acceleration": -0.20515536250979793,
+          "thematic_clustering_minus_volatility": 0.33182803426642893,
+          "thematic_overlay_minus_acceleration": -0.28602906311536214
+        },
+        "external_narrative_blend": 0.28031146610689966,
+        "headline_density": 0.016203703703703703,
+        "layer2_scored": true,
+        "market_native_blend": 0.43869288300169634,
+        "mention_velocity": 0.1619047619047619,
+        "narrative_concentration": 0.042705971277399835,
+        "news_attention": 0.15315579394150824,
+        "participation": 0.4903703683807675,
+        "reddit_attention": 0.32203795085282283,
+        "saturation": {
+          "acceleration_without_participation_excess": 0.19097547031950673,
+          "attention_share_concentration_thematic_mass": 0.042705971277399835,
+          "crowd_fixation_intensity": 0.3190476190476191,
+          "external_participation_alignment": 0.8316675824720554,
+          "narrative_concentration_dominance": 0.042705971277399835,
+          "participation_without_narrative_amplification_excess": 0.2100589022738678
+        },
+        "subreddit_breadth": 0.6590616115309205,
+        "symbol": "NVDA",
+        "thematic_clustering": 0.4761904761904763,
+        "thematic_mass_concentration_raw": 0.042705971277399835,
+        "thematic_overlay": 0.3953167755849121,
+        "volatility_expansion": 0.14436244192404735
+      }
+    }
+  },
+  "preset_key": "nvda-ai-narrative",
+  "provenance": [
+    "truth:ai_narrative_2024:0",
+    "truth_event:ai_narrative_2024"
+  ],
+  "replay_date": "2024-05-23",
+  "replay_emission_tags": {
+    "NVDA": [
+      "thematic_concentration_dominance"
+    ]
+  },
+  "replay_id": "rm_46b6f1b2f9a7c4fcff92d233af19",
+  "schema_version": 1,
+  "symbols_analyzed": [
+    "NVDA"
+  ],
+  "truth_expectation": {
+    "behavioral_tags": [
+      "ai_infrastructure_leadership",
+      "thematic_concentration"
+    ],
+    "event_file_stem": "ai_narrative_2024",
+    "event_name": "ai_narrative_2024",
+    "expectation_index": 0,
+    "expected_speculative_states": [
+      "HIGH_SPECULATION",
+      "NARRATIVE_ACCELERATION",
+      "VOLATILITY_CLUSTER"
+    ]
+  }
+}

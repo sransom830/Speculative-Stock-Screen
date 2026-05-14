@@ -1,0 +1,91 @@
+{
+  "alpaca_feed": "iex",
+  "catalog_archetype_ids": [
+    "narrative_ignition",
+    "retail_mania",
+    "thematic_saturation",
+    "volatility_cluster"
+  ],
+  "external_provider_slug": "historical_curated_research_v1",
+  "external_snapshot_path": "data/external_attention_snapshots/gme_january_2021.json",
+  "lookback_calendar_days": 90,
+  "per_symbol": {
+    "GME": {
+      "layer2_attention": {
+        "ecosystem_multiplier": 1.3399999999999999,
+        "factor_acceleration_composite": 0.8,
+        "factor_participation_composite": 0.7893219800099829,
+        "factor_realized_vol_expansion": 0.06501456737457512,
+        "factor_volatility_composite": 0.06501456737457512,
+        "speculative_attention_score": 82.62876565586528,
+        "speculative_attention_state": "RETAIL_FRENZY"
+      },
+      "saturation": {
+        "acceleration": 0.8,
+        "combined_saturation_index": 0.4091039830305968,
+        "convergence": {
+          "narrative_concentration_minus_volatility": -0.029818457680697547,
+          "reddit_composite_minus_participation": -0.37690931033340935,
+          "reddit_velocity_minus_acceleration": -0.5322580645161291,
+          "reddit_velocity_minus_participation": -0.521580044526112,
+          "subreddit_breadth_minus_participation": -0.09349072530973501,
+          "thematic_clustering_minus_acceleration": -0.4473214285714285,
+          "thematic_clustering_minus_volatility": 0.28766400405399645,
+          "thematic_overlay_minus_acceleration": -0.43541872863150755
+        },
+        "external_narrative_blend": 0.2667624502663409,
+        "headline_density": 0.021604938271604937,
+        "layer2_scored": true,
+        "market_native_blend": 0.5514455157948527,
+        "mention_velocity": 0.26774193548387093,
+        "narrative_concentration": 0.03519610969387757,
+        "news_attention": 0.18471514589632154,
+        "participation": 0.7893219800099829,
+        "reddit_attention": 0.41241266967657353,
+        "saturation": {
+          "acceleration_without_participation_excess": 0.010678019990017162,
+          "attention_share_concentration_thematic_mass": 0.03519610969387757,
+          "crowd_fixation_intensity": 0.3102102534562212,
+          "external_participation_alignment": 0.6230906896665906,
+          "narrative_concentration_dominance": 0.03519610969387757,
+          "participation_without_narrative_amplification_excess": 0.5225595297436421
+        },
+        "subreddit_breadth": 0.6958312547002479,
+        "symbol": "GME",
+        "thematic_clustering": 0.35267857142857156,
+        "thematic_mass_concentration_raw": 0.03519610969387757,
+        "thematic_overlay": 0.3645812713684925,
+        "volatility_expansion": 0.06501456737457512
+      }
+    }
+  },
+  "preset_key": "gme-jan-2021",
+  "provenance": [
+    "truth:gme_january_2021:0",
+    "truth_event:gme_january_2021"
+  ],
+  "replay_date": "2021-01-27",
+  "replay_emission_tags": {
+    "GME": []
+  },
+  "replay_id": "rm_9f3dd3bc96303696d01b89939361",
+  "schema_version": 1,
+  "symbols_analyzed": [
+    "GME"
+  ],
+  "truth_expectation": {
+    "behavioral_tags": [
+      "meme_equity_crowding",
+      "battlefield_volume",
+      "squeeze_narrative"
+    ],
+    "event_file_stem": "gme_january_2021",
+    "event_name": "gme_january_2021",
+    "expectation_index": 0,
+    "expected_speculative_states": [
+      "HIGH_SPECULATION",
+      "RETAIL_FRENZY",
+      "VOLATILITY_CLUSTER"
+    ]
+  }
+}

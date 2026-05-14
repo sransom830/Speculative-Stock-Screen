@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "disclaimer": "Curator-assigned links between replay presets and catalog archetypes — illustrative ontology wiring, not empirical regime labels.",
+  "links": [
+    {
+      "preset_key": "gme-jan-2021",
+      "catalog_archetype_ids": [
+        "retail_mania",
+        "thematic_saturation",
+        "narrative_ignition",
+        "volatility_cluster"
+      ],
+      "curator_notes": "Bundles meme-equity breadth + squeeze-mechanic thematic mass motifs in curated snapshot examples."
+    },
+    {
+      "preset_key": "amc-jan-2021",
+      "catalog_archetype_ids": [
+        "retail_mania",
+        "thematic_saturation",
+        "leverage_reflexivity"
+      ],
+      "curator_notes": "Adjacent meme-equity rehearsal window — shares retail-led structures with correlated thematic snapshots."
+    },
+    {
+      "preset_key": "nvda-ai-narrative",
+      "catalog_archetype_ids": [
+        "thematic_saturation",
+        "narrative_ignition",
+        "volatility_cluster"
+      ],
+      "curator_notes": "Infrastructure / semiconductor narrative concentration motifs — thematic_saturation-forward wiring."
+    },
+    {
+      "preset_key": "mstr-crypto-reflexivity",
+      "catalog_archetype_ids": [
+        "leverage_reflexivity",
+        "volatility_cluster",
+        "narrative_ignition"
+      ],
+      "curator_notes": "BTC-linked reflexivity rehearsal — emphasizes coherent RV/acceleration motifs versus pure retail breadth."
+    }
+  ]
+}

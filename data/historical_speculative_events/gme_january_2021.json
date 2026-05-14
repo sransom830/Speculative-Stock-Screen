@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "event_name": "gme_january_2021",
+  "description": "US retail meme squeeze window (January 2021). Canonical behavioral labels for battlefield-style participation and volatility clustering — calibration only, not a trading signal.",
+  "symbols": ["GME", "AMC"],
+  "event_dates": ["2021-01-22", "2021-01-27", "2021-01-28"],
+  "lookback_calendar_days": 90,
+  "alpaca_feed": "iex",
+  "expectations": [
+    {
+      "replay_date": "2021-01-27",
+      "symbol": "GME",
+      "expected_speculative_states": ["RETAIL_FRENZY", "HIGH_SPECULATION", "VOLATILITY_CLUSTER"],
+      "behavioral_tags": ["meme_equity_crowding", "battlefield_volume", "squeeze_narrative"]
+    },
+    {
+      "replay_date": "2021-01-28",
+      "symbol": "GME",
+      "expected_speculative_states": ["RETAIL_FRENZY", "HIGH_SPECULATION", "VOLATILITY_CLUSTER"],
+      "behavioral_tags": ["continuation_volatility", "battlefield_volume"]
+    },
+    {
+      "replay_date": "2021-01-27",
+      "symbol": "AMC",
+      "expected_speculative_states": ["RETAIL_FRENZY", "HIGH_SPECULATION", "VOLATILITY_CLUSTER"],
+      "behavioral_tags": ["meme_equity_satellite", "correlated_meme_book"]
+    }
+  ]
+}

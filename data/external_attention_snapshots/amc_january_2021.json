@@ -1,0 +1,38 @@
+{
+  "schema_version": 2,
+  "replay_date": "2021-01-27",
+  "lookback_calendar_days": 90,
+  "provider_slug": "historical_curated_research_v1",
+  "notes": "Illustrative curated counts for AMC meme-correlated window research — observational only.",
+  "symbols": [
+    {
+      "symbol": "AMC",
+      "reddit_mentions": 9200,
+      "reddit_mentions_prior": 4100,
+      "reddit_comment_count": 620000,
+      "reddit_comment_count_prior": 280000,
+      "subreddit_count": 11,
+      "subreddit_list": [
+        "AMCstock",
+        "amcstock",
+        "investing",
+        "options",
+        "shortsqueeze",
+        "stocks",
+        "stockmarket",
+        "wallstreetbets",
+        "wallstreetbetsnew",
+        "smallstreetbets",
+        "Superstonk"
+      ],
+      "news_headline_count": 340,
+      "news_headline_count_prior": 130,
+      "thematic_topic_masses": [
+        { "topic": "meme_equity_satellite", "mass": 130 },
+        { "topic": "option_activity_attention", "mass": 85 },
+        { "topic": "theater_chain_operations", "mass": 55 },
+        { "topic": "liquidity_microstructure", "mass": 70 }
+      ]
+    }
+  ]
+}

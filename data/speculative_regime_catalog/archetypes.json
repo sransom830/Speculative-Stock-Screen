@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "ontology_scope": "observational_research_only",
+  "disclaimer": "Taxonomy entries describe illustrative regime shapes for replay ontology research — not forecasts, fragility scores, or trade signals.",
+  "archetypes": [
+    {
+      "id": "retail_mania",
+      "label": "Retail participation-led attention surge",
+      "dominant_structure": "Market-native participation composites rise relative to contemporaneous acceleration/volatility in the replay window; external Reddit composites often track breadth and velocity.",
+      "expected_convergence_behavior": "Replay diagnostics tend to show Reddit composite / mention velocity gaps versus participation that shrink when curated snapshots imply coordinated retail chatter (alignment rises only when counts line up — observational).",
+      "expected_participation_behavior": "Relative volume and dollar-flow participation composites populate the upper half of their cross-sectional replay band more often than pure price-acceleration spikes in isolation.",
+      "expected_narrative_behavior": "Subreddit breadth and mention velocity lift together; headline density may lag unless wire volume rises in the same snapshot bundle.",
+      "related_replay_emission_tags": [
+        "participation_dominant_reflexivity",
+        "narrative_synchronized_saturation"
+      ]
+    },
+    {
+      "id": "thematic_saturation",
+      "label": "Thematic mass concentration",
+      "dominant_structure": "News thematic masses concentrate into few buckets (high narrative concentration / clustering); Reddit breadth may still be wide while semantic mass piles into dominant themes.",
+      "expected_convergence_behavior": "Narrative concentration and thematic clustering factors diverge from realized-volatility expansion when volatility is driven by microstructure noise rather than thematic shocks.",
+      "expected_participation_behavior": "Participation may sit mid-pack while thematic diagnostics spike — saturation reads as semantic crowding rather than pure flow breadth.",
+      "expected_narrative_behavior": "High thematic clustering with elevated headline density in curated snapshots; attention_share_concentration on raw thematic masses rises versus diffuse regimes.",
+      "related_replay_emission_tags": [
+        "thematic_concentration_dominance",
+        "narrative_synchronized_saturation"
+      ]
+    },
+    {
+      "id": "leverage_reflexivity",
+      "label": "Co-expanded leverage reflexivity",
+      "dominant_structure": "Acceleration composites and realized volatility expansion move jointly at or above participation — coherent expansion path in Layer 2 factors.",
+      "expected_convergence_behavior": "Replay emission tag coherent_leverage_reflexivity marks batches where acceleration/volatility jointly dominate participation ordering.",
+      "expected_participation_behavior": "Participation remains supportive but may trail second derivatives — flows chase convex payoff zones rather than steady breadth accumulation.",
+      "expected_narrative_behavior": "External overlay may synchronize late if snapshots emphasize volatility-linked headlines rather than breadth-first chatter.",
+      "related_replay_emission_tags": [
+        "coherent_leverage_reflexivity",
+        "participation_dominant_reflexivity"
+      ]
+    },
+    {
+      "id": "narrative_ignition",
+      "label": "Narrative ignition / synchronized saturation onset",
+      "dominant_structure": "Combined saturation index and external participation alignment lift together versus batch medians — curated counts imply Reddit/market stacks agreeing.",
+      "expected_convergence_behavior": "Small absolute gaps between Reddit attention composite and participation when snapshots imply ignition-class coordination.",
+      "expected_participation_behavior": "Participation climbs with thematic news mass in the same replay window rather than purely microstructure bursts.",
+      "expected_narrative_behavior": "Mention velocity and narrative concentration rise in tandem in external snapshots aligned to the replay window.",
+      "related_replay_emission_tags": [
+        "narrative_synchronized_saturation",
+        "thematic_concentration_dominance"
+      ]
+    },
+    {
+      "id": "volatility_cluster",
+      "label": "Volatility clustering / RV expansion-led window",
+      "dominant_structure": "Realized volatility expansion leads the Layer 2 stack while participation and acceleration orderings shift around the shock window.",
+      "expected_convergence_behavior": "Thematic_clustering_minus_volatility gaps trend negative when volatility sits above narrative clustering in replay comparisons.",
+      "expected_participation_behavior": "Participation can mean-revert intrawindow while RV expansion remains sticky — descriptive ordering only.",
+      "expected_narrative_behavior": "Headline velocity may spike without proportional thematic clustering if desks churn tactical updates.",
+      "related_replay_emission_tags": [
+        "coherent_leverage_reflexivity",
+        "participation_dominant_reflexivity"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "alpaca_feed": "iex",
+  "catalog_archetype_ids": [
+    "leverage_reflexivity",
+    "narrative_ignition",
+    "volatility_cluster"
+  ],
+  "external_provider_slug": "historical_curated_research_v1",
+  "external_snapshot_path": "data/external_attention_snapshots/mstr_crypto_reflexivity.json",
+  "lookback_calendar_days": 90,
+  "per_symbol": {
+    "MSTR": {
+      "layer2_attention": {
+        "ecosystem_multiplier": 1.26,
+        "factor_acceleration_composite": 0.21675826462338935,
+        "factor_participation_composite": 0.5236198061304614,
+        "factor_realized_vol_expansion": 0.1345842327195509,
+        "factor_volatility_composite": 0.1345842327195509,
+        "speculative_attention_score": 39.98760015530175,
+        "speculative_attention_state": "NEUTRAL"
+      },
+      "saturation": {
+        "acceleration": 0.21675826462338935,
+        "combined_saturation_index": 0.2861149894176484,
+        "convergence": {
+          "narrative_concentration_minus_volatility": -0.09893797421614955,
+          "reddit_composite_minus_participation": -0.2032527173156598,
+          "reddit_velocity_minus_acceleration": -0.045329693194817916,
+          "reddit_velocity_minus_participation": -0.35219123470189,
+          "subreddit_breadth_minus_participation": 0.09251739680321047,
+          "thematic_clustering_minus_acceleration": 0.26895602109089645,
+          "thematic_clustering_minus_volatility": 0.3511300529947349,
+          "thematic_overlay_minus_acceleration": 0.1647773639658959
+        },
+        "external_narrative_blend": 0.28057587767749625,
+        "headline_density": 0.011188271604938273,
+        "layer2_scored": true,
+        "market_native_blend": 0.29165410115780055,
+        "mention_velocity": 0.17142857142857143,
+        "narrative_concentration": 0.03564625850340134,
+        "news_attention": 0.17009870244394054,
+        "participation": 0.5236198061304614,
+        "reddit_attention": 0.32036708881480164,
+        "saturation": {
+          "acceleration_without_participation_excess": 0.0,
+          "attention_share_concentration_thematic_mass": 0.03564625850340134,
+          "crowd_fixation_intensity": 0.3285714285714286,
+          "external_participation_alignment": 0.7967472826843403,
+          "narrative_concentration_dominance": 0.03564625850340134,
+          "participation_without_narrative_amplification_excess": 0.24304392845296519
+        },
+        "subreddit_breadth": 0.6161372029336719,
+        "symbol": "MSTR",
+        "thematic_clustering": 0.48571428571428577,
+        "thematic_mass_concentration_raw": 0.03564625850340134,
+        "thematic_overlay": 0.38153562858928525,
+        "volatility_expansion": 0.1345842327195509
+      }
+    }
+  },
+  "preset_key": "mstr-crypto-reflexivity",
+  "provenance": [
+    "catalog:mstr-crypto-reflexivity"
+  ],
+  "replay_date": "2021-05-19",
+  "replay_emission_tags": {
+    "MSTR": []
+  },
+  "replay_id": "rm_58363d892533bdbb878e68b441b9",
+  "schema_version": 1,
+  "symbols_analyzed": [
+    "MSTR"
+  ],
+  "truth_expectation": null
+}

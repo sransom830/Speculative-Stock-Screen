@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "event_name": "ai_narrative_2024",
+  "description": "AI infrastructure / semiconductor narrative acceleration window (2024). Truth-set favors narrative acceleration or liquidity-heavy speculative states — ontology refinement only.",
+  "symbols": ["NVDA", "AMD", "SMCI"],
+  "event_dates": ["2024-05-23", "2024-06-18"],
+  "lookback_calendar_days": 90,
+  "alpaca_feed": "iex",
+  "expectations": [
+    {
+      "replay_date": "2024-05-23",
+      "symbol": "NVDA",
+      "expected_speculative_states": ["NARRATIVE_ACCELERATION", "HIGH_SPECULATION", "VOLATILITY_CLUSTER"],
+      "behavioral_tags": ["ai_infrastructure_leadership", "thematic_concentration"]
+    },
+    {
+      "replay_date": "2024-06-18",
+      "symbol": "SMCI",
+      "expected_speculative_states": ["NARRATIVE_ACCELERATION", "HIGH_SPECULATION", "VOLATILITY_CLUSTER"],
+      "behavioral_tags": ["ai_hardware_satellite", "narrative_beta"]
+    },
+    {
+      "replay_date": "2024-05-23",
+      "symbol": "AMD",
+      "expected_speculative_states": ["NARRATIVE_ACCELERATION", "HIGH_SPECULATION", "VOLATILITY_CLUSTER", "NEUTRAL"],
+      "behavioral_tags": ["ai_semiconductor_peer", "thematic_drag_along"]
+    }
+  ]
+}
