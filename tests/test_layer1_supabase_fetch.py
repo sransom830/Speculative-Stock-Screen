@@ -13,11 +13,11 @@ class _FakeResp:
 
 
 class _FakeQuery:
-    __slots__ = ("_pages", "_call")
+    __slots__ = ("_pages", "_parent")
 
-    def __init__(self, pages: list[list[dict]]) -> None:
+    def __init__(self, pages: list[list[dict]], parent: "_FakeClient") -> None:
         self._pages = pages
-        self._call = 0
+        self._parent = parent
 
     def select(self, *args: object, **kwargs: object) -> _FakeQuery:
         return self
@@ -25,24 +25,29 @@ class _FakeQuery:
     def order(self, *args: object, **kwargs: object) -> _FakeQuery:
         return self
 
-    def range(self, start: int, end: int) -> _FakeQuery:
+    def gt(self, *args: object, **kwargs: object) -> _FakeQuery:
+        return self
+
+    def limit(self, *args: object, **kwargs: object) -> _FakeQuery:
         return self
 
     def execute(self) -> _FakeResp:
-        batch = self._pages[self._call] if self._call < len(self._pages) else []
-        self._call += 1
+        i = self._parent._exec_seq
+        batch = self._pages[i] if i < len(self._pages) else []
+        self._parent._exec_seq += 1
         return _FakeResp(batch)
 
 
 class _FakeClient:
-    __slots__ = ("_pages",)
+    __slots__ = ("_pages", "_exec_seq")
 
     def __init__(self, pages: list[list[dict]]) -> None:
         self._pages = pages
+        self._exec_seq = 0
 
     def table(self, name: str) -> _FakeQuery:
         assert name == "layer1_broad_universe"
-        return _FakeQuery(self._pages)
+        return _FakeQuery(self._pages, self)
 
 
 def test_fetch_layer1_paginates_until_short_page() -> None:
@@ -55,6 +60,7 @@ def test_fetch_layer1_paginates_until_short_page() -> None:
     assert stats["layer1_fetch_pagination_chunks"] == 3
     assert stats["layer1_fetch_chunk_row_counts"] == [2, 2, 1]
     assert stats["layer1_fetch_chunk_size_requested"] == 2
+    assert stats["layer1_fetch_pagination_strategy"] == "keyset_symbol_gt"
     assert list(df["symbol"]) == [f"S{i}" for i in range(5)]
 
 
@@ -64,7 +70,9 @@ def test_fetch_layer1_exact_multiple_triggers_probe_page() -> None:
     stats: dict = {}
     df = fetch_layer1_broad_universe_df(client=_FakeClient(pages), load_stats_out=stats, chunk_size=2)
     assert len(df) == 4
+    assert stats["layer1_fetch_pagination_chunks"] == 3
     assert stats["layer1_fetch_chunk_row_counts"] == [2, 2, 0]
+    assert stats["layer1_fetch_pagination_strategy"] == "keyset_symbol_gt"
 
 
 def test_fetch_layer1_empty_table() -> None:
@@ -74,6 +82,7 @@ def test_fetch_layer1_empty_table() -> None:
     assert stats["layer1_fetch_total_rows"] == 0
     assert stats["layer1_fetch_pagination_chunks"] == 1
     assert stats["layer1_fetch_chunk_row_counts"] == [0]
+    assert stats["layer1_fetch_pagination_strategy"] == "keyset_symbol_gt"
 
 
 def test_fetch_layer1_rejects_bad_chunk_size() -> None:

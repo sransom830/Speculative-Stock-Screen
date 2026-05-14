@@ -60,11 +60,16 @@ def main() -> None:
     stats["layer1_fetch_chunk_row_counts"] = layer1_load_stats.get(
         "layer1_fetch_chunk_row_counts", []
     )
+    stats["layer1_fetch_pagination_strategy"] = layer1_load_stats.get(
+        "layer1_fetch_pagination_strategy", ""
+    )
     stats["fetch_layer1_s"] = round(time.perf_counter() - t_l1, 3)
 
     if layer1_df.empty:
         print("layer1_rows: 0 (nothing to score)")
         print(
+            "layer1_fetch_pagination_strategy:",
+            stats.get("layer1_fetch_pagination_strategy"),
             "layer1_fetch_pagination_chunks:",
             stats["layer1_fetch_pagination_chunks"],
             "chunk_row_counts:",
@@ -104,6 +109,7 @@ def main() -> None:
     print("--- runtime ---")
     for k in (
         "layer1_rows",
+        "layer1_fetch_pagination_strategy",
         "layer1_fetch_pagination_chunks",
         "layer1_fetch_chunk_row_counts",
         "fetch_layer1_s",

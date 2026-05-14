@@ -73,6 +73,8 @@ def main() -> None:
     if layer1_df.empty:
         print("layer1_broad_universe is empty.")
         print(
+            "layer1_fetch_pagination_strategy:",
+            layer1_load_stats.get("layer1_fetch_pagination_strategy"),
             "layer1_fetch_pagination_chunks:",
             layer1_load_stats.get("layer1_fetch_pagination_chunks"),
             "chunk_row_counts:",
@@ -86,7 +88,8 @@ def main() -> None:
     print("Production-equivalent path: full Layer 1 universe + shared bars batch.")
     print(f"Layer 1 rows loaded: {len(layer1_df)}")
     print(
-        f"Layer 1 fetch: pagination_chunks={layer1_load_stats.get('layer1_fetch_pagination_chunks')} "
+        f"Layer 1 fetch: strategy={layer1_load_stats.get('layer1_fetch_pagination_strategy')} "
+        f"pagination_chunks={layer1_load_stats.get('layer1_fetch_pagination_chunks')} "
         f"chunk_row_counts={layer1_load_stats.get('layer1_fetch_chunk_row_counts')} "
         f"chunk_size_requested={layer1_load_stats.get('layer1_fetch_chunk_size_requested')}"
     )
